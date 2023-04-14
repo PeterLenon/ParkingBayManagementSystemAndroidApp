@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ParknGo</string>
+    <string name="logo">Logo</string>
+    <string name="hey_lets_get_you_parked_in_no_time">Hey! Lets get you parked in no time</string>
+    <string name="please_share_your_location_so_we_can_locate_the_parking_spots_nearer_to_you_agree_to_share_location_of_this_device">Please share your location so we can locate the parking spots nearer to you. Agree to share location of this device?</string>
+    <string name="take_me_to_map">Take me to Map!</string>
+    <string name="map">Map</string>
+    <string name="location_pin">Location_Pin</string>
+    <string name="unoccupied">UnOccupied</string>
+    <string name="unoccupied_handicapped">Unoccupied Handicapped</string>
+    <string name="occupied">Occupied</string>
+</resources>

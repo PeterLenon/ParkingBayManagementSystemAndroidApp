@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".carparkview">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:contentDescription="carpark_bay_view"
+        android:src="@mipmap/tiger_world"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/box_backsground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bay_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bay_rectangle"
+        android:backgroundTint="#11D83D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/bay_rectangle"
+        android:backgroundTint="#C42121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/unoccupied"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/unoccupied_handicapped"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/occupied"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.0" />
+
+<!--    this section is the map populated with parking bays-->
+
+
+    <TextView
+        android:id="@+id/bay1"
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bay_rectangle"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bay2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bay2"
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="392dp"
+        android:background="@drawable/bay_rectangle"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/bay3"
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bay_rectangle"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@+id/bay4"
+        app:layout_constraintStart_toEndOf="@id/bay2" />
+
+    <TextView
+        android:id="@+id/bay4"
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/bay_rectangle"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@id/bay1" />
+
+    <TextView
+        android:id="@+id/bay5"
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bay_rectangle"
+        android:rotation="90"
+        android:backgroundTint="#11D83D"
+        app:layout_constraintBottom_toTopOf="@id/bay6"
+        app:layout_constraintStart_toEndOf="@id/bay3" />
+
+    <TextView
+        android:id="@+id/bay6"
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/bay_rectangle"
+        android:rotation="90"
+        android:backgroundTint="#11D83D"
+        app:layout_constraintStart_toEndOf="@id/bay4"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        tools:layout_editor_absoluteX="68dp"/>
+
+    <TextView
+        android:id="@+id/bay7"
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/bay_rectangle"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@id/textView3"
+        android:backgroundTint="#C42121"
+        app:layout_constraintStart_toEndOf="@id/bay6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
